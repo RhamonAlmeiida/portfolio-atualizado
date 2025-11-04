@@ -3,6 +3,7 @@
   max-width: 900px;
   padding: 2rem;
   color: #e0f7ff;
+  background: linear-gradient(180deg, #001a33, #000814);
 
   h2 {
     text-align: center;
@@ -32,6 +33,124 @@
 
       p {
         margin-bottom: 0.5rem;
+      }
+    }
+  }
+}
+.habilidades {
+  margin: 4rem auto;
+  max-width: 1000px;
+  padding: 2.5rem;
+  color: #e0f7ff;
+  text-align: center;
+
+  h2 {
+    font-size: 2.3rem;
+    color: #00e6ff;
+    text-shadow: 0 0 12px rgba(0, 230, 255, 0.6);
+    margin-bottom: 3rem;
+    letter-spacing: 1px;
+  }
+
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+
+    .card {
+      flex: 1 1 280px;
+      background: linear-gradient(145deg, rgba(0, 15, 30, 0.8), rgba(0, 40, 60, 0.6));
+      padding: 2rem;
+      border-radius: 16px;
+      border: 1px solid rgba(0, 255, 255, 0.2);
+      box-shadow: 0 0 25px rgba(0, 230, 255, 0.08);
+      transition: all 0.4s ease;
+      text-align: left;
+
+      &:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 0 40px rgba(0, 230, 255, 0.25);
+      }
+
+      .icon {
+        font-size: 2rem;
+        color: #00e6ff;
+        margin-bottom: 1rem;
+        text-shadow: 0 0 10px rgba(0, 230, 255, 0.6);
+      }
+
+      h3 {
+        color: #8ecae6;
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        margin: 0.6rem 0;
+        color: #bde0fe;
+        font-size: 0.95rem;
+      }
+
+      ::ng-deep .p-progressbar {
+        height: 18px;
+        border-radius: 6px;
+        margin-bottom: 1rem;
+        background: rgba(255, 255, 255, 0.1);
+
+        .p-progressbar-value {
+          background: linear-gradient(90deg, #00e6ff, #00ffccb4);
+          box-shadow: 0 0 10px rgba(0, 230, 255, 0.5);
+          transition: width 0.8s ease;
+        }
+      }
+    }
+  }
+}
+/* 🌐 RESPONSIVIDADE */
+@media (max-width: 1024px) {
+  .habilidades {
+    padding: 5rem 1.5rem;
+
+    h2 {
+      font-size: 2.1rem;
+    }
+
+    .card {
+      padding: 1.8rem 1rem;
+
+      i {
+        font-size: 2.6rem;
+      }
+
+      h3 {
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .habilidades {
+    padding: 4rem 1rem;
+
+    h2 {
+      font-size: 1.8rem;
+    }
+
+    .grid {
+      gap: 1.5rem;
+    }
+
+    .card {
+      padding: 1.5rem 0.8rem;
+
+      i {
+        font-size: 2.4rem;
+      }
+
+      p {
+        font-size: 0.9rem;
       }
     }
   }

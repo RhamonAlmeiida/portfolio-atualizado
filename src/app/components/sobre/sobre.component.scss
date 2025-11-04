@@ -1,23 +1,162 @@
 .sobre {
-  background: rgba(0, 15, 30, 0.8);
-  border: 1px solid rgba(0, 255, 255, 0.2);
-  box-shadow: 0 0 25px rgba(0, 255, 255, 0.1);
-  border-radius: 12px;
-  padding: 3rem;
-  margin: 2rem auto;
-  max-width: 800px;
-  line-height: 1.8;
+  background: radial-gradient(circle at top, #021a3b, #000814);
+  border: 1px solid rgba(0, 255, 255, 0.15);
+  box-shadow: 0 0 35px rgba(0, 230, 255, 0.15);
+  border-radius: 16px;
+  padding: 3.5rem 2rem;
+  margin: 3rem auto;
+  max-width: 900px;
   color: #c9f2ff;
+  text-align: center;
+  transition: all 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 0 50px rgba(0, 230, 255, 0.25);
+    transform: translateY(-4px);
+  }
 
   h2 {
-    text-align: center;
+    font-size: 2.4rem;
     color: #00e6ff;
-    text-shadow: 0 0 10px #00e6ff;
-    margin-bottom: 1.5rem;
+    text-shadow: 0 0 15px rgba(0, 230, 255, 0.6);
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
   }
 
-  p {
+  .conteudo {
+    font-size: 1.05rem;
+    line-height: 1.9;
     text-align: justify;
-    margin-bottom: 1rem;
+
+    p {
+      margin-bottom: 1.5rem;
+      color: #bde0fe;
+    }
+
+    span {
+      color: #00e6ff;
+      font-weight: 600;
+    }
+
+    strong {
+      color: #61dafb;
+    }
+  }
+
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+
+    .skill {
+      background: rgba(0, 230, 255, 0.1);
+      border: 1px solid rgba(0, 230, 255, 0.3);
+      color: #00e6ff;
+      padding: 0.7rem 1.4rem;
+      border-radius: 20px;
+      font-weight: 500;
+      text-shadow: 0 0 8px rgba(0, 230, 255, 0.4);
+      transition: all 0.3s ease;
+
+      &:hover {
+        background: rgba(0, 230, 255, 0.2);
+        box-shadow: 0 0 15px rgba(0, 230, 255, 0.4);
+        transform: scale(1.05);
+      }
+    }
   }
 }
+
+
+.sobre {
+  padding: 6rem 2rem;
+  background: linear-gradient(180deg, #000814, #001a33);
+  color: #e0f7ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+  text-align: left;
+  transition: all 0.4s ease;
+}
+  .texto {
+    flex: 1 1 450px;
+    max-width: 600px;
+
+    h2 {
+      font-size: 2.4rem;
+      color: #00e6ff;
+      margin-bottom: 1.5rem;
+      text-shadow: 0 0 15px rgba(0, 230, 255, 0.7);
+    }
+
+    p {
+      font-size: 1.05rem;
+      color: #cde9f5;
+      line-height: 1.8;
+      margin-bottom: 1.2rem;
+      text-align: justify;
+
+      strong {
+        color: #00ffcc;
+        text-shadow: 0 0 8px rgba(0, 255, 200, 0.4);
+      }
+    }
+
+
+
+/* 🌐 RESPONSIVIDADE */
+@media (max-width: 1024px) {
+  .sobre {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 3rem;
+
+    .texto {
+      h2 {
+        font-size: 2.1rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+
+      .skills {
+        justify-content: center;
+      }
+    }
+
+    .imagem img {
+      width: 280px;
+      height: 280px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .sobre {
+    padding: 4rem 1rem;
+
+    .texto h2 {
+      font-size: 1.8rem;
+    }
+
+    .texto p {
+      font-size: 0.95rem;
+    }
+
+    .skills span {
+      font-size: 0.85rem;
+      padding: 0.4rem 0.8rem;
+    }
+
+    .imagem img {
+      width: 220px;
+      height: 220px;
+    }
+  }
+}
+  }

@@ -1,15 +1,70 @@
+@import "primeicons/primeicons.css";
 .hero {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  min-height: 80vh;
+  min-height: 85vh;
   background: radial-gradient(circle at top, #021a3b, #000);
   color: #e6f1f5;
   padding: 2rem;
+  overflow: hidden;
 
+  /* 🔹 Marcas d’água translúcidas animadas */
+  .marca-dagua {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 0;
+    opacity: 0.08;
+    animation: flutuar 10s ease-in-out infinite alternate;
+
+    .icone {
+      font-size: 10rem;
+      text-shadow: 0 0 25px rgba(0, 230, 255, 0.4);
+      cursor: pointer;
+      transition: all 0.3s ease;
+      pointer-events: auto;
+
+      &:hover {
+        opacity: 0.3;
+        transform: scale(1.1);
+      }
+
+      &.linkedin {
+        color: #00aaff;
+      }
+
+      &.github {
+        color: #ffffff;
+      }
+
+      &.email {
+        color: #ffcc00;
+      }
+    }
+  }
+
+  @keyframes flutuar {
+    0% {
+      transform: translateY(0) scale(1);
+    }
+    50% {
+      transform: translateY(-15px) scale(1.02);
+    }
+    100% {
+      transform: translateY(10px) scale(1);
+    }
+  }
+
+  /* 🔹 Conteúdo principal */
   .perfil {
+    position: relative;
+    z-index: 2;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,7 +86,7 @@
     }
 
     h1 {
-      font-size: 2.2rem;
+      font-size: 2.4rem;
       margin-top: 1rem;
 
       span {
@@ -51,18 +106,83 @@
       color: #bde0fe;
     }
 
-    .botoes {
+    .redes {
       display: flex;
-      flex-wrap: wrap;
       justify-content: center;
-      gap: 1rem;
+      gap: 1.5rem;
       margin-top: 1.5rem;
 
-      ::ng-deep .p-button {
-        font-weight: 500;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(13, 224, 224, 0.493);
+      a {
+        font-size: 1.8rem;
+        color: #00e6ff;
+        transition: all 0.3s ease;
+        text-shadow: 0 0 8px rgba(0, 230, 255, 0.4);
+
+        &:hover {
+          color: #00ffcc;
+          transform: scale(1.2);
+          text-shadow: 0 0 15px rgba(0, 255, 204, 0.8);
+        }
       }
+    }
+  }
+
+  /* 🔹 Responsividade */
+  @media (max-width: 1024px) {
+    .marca-dagua .icone {
+      font-size: 8rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .marca-dagua {
+      justify-content: space-between;
+
+      .icone {
+        font-size: 6rem;
+      }
+    }
+
+    .perfil img {
+      width: 150px;
+      height: 150px;
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 0.95rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .marca-dagua {
+      flex-direction: column;
+      justify-content: center;
+      gap: 2rem;
+
+      .icone {
+        font-size: 4rem;
+      }
+    }
+
+    .perfil img {
+      width: 120px;
+      height: 120px;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+    }
+
+    h2 {
+      font-size: 1.1rem;
+    }
+
+    p {
+      font-size: 0.9rem;
     }
   }
 }

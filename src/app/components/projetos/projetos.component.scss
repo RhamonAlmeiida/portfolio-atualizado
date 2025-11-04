@@ -1,31 +1,256 @@
+// .projetos {
+//   padding: 5rem 2rem;
+//   background: linear-gradient(180deg, #010a16 0%, #000 100%);
+//   color: #e0f7ff;
+//   text-align: center;
+
+//   h2 {
+//     font-size: 2.2rem;
+//     color: #00e6ff;
+//     margin-bottom: 3rem;
+//     text-shadow: 0 0 12px rgba(0, 230, 255, 0.6);
+//   }
+
+//   .grid {
+//     display: grid;
+//     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+//     gap: 2rem;
+//     justify-content: center;
+//   }
+
+//   ::ng-deep .p-card {
+//     background: rgba(15, 25, 35, 0.9);
+//     color: #e0f7ff;
+//     border: 1px solid rgba(0, 230, 255, 0.2);
+//     box-shadow: 0 0 25px rgba(0, 230, 255, 0.1);
+//     border-radius: 16px;
+//     transition: all 0.3s ease;
+//     overflow: hidden;
+
+//     &:hover {
+//       transform: translateY(-5px);
+//       box-shadow: 0 0 35px rgba(0, 230, 255, 0.3);
+//     }
+
+//     img {
+//       width: 100%;
+//       height: 180px;
+//       object-fit: cover;
+//       border-bottom: 1px solid rgba(0, 230, 255, 0.2);
+//     }
+
+//     .p-card-header {
+//       font-size: 1.4rem;
+//       color: #00e6ff;
+//       margin-top: 1rem;
+
+//     }
+
+//     .p-card-subtitle {
+//       color: #8ecae6;
+//       margin-bottom: 0.5rem;
+//     }
+
+//     .p-card-content {
+//       padding: 1rem;
+//       color: #bde0fe;
+//       font-size: 0.95rem;
+//       line-height: 1.6;
+//     }
+//   }
+//   ::ng-deep .p-carousel {
+//   margin-bottom: 1rem;
+// }
+
+// ::ng-deep .carousel-img {
+//   width: 100%;
+//   height: 200px;
+//   object-fit: cover;
+//   border-radius: 8px;
+//   border: 1px solid rgba(0, 230, 255, 0.2);
+//   box-shadow: 0 0 10px rgba(0, 230, 255, 0.2);
+// }
+
+// }
 .projetos {
-  padding: 3rem 1rem;
+  padding: 5rem 2rem;
+ background: radial-gradient(circle at top, #000814 , #021a3b);
+  color: #e6f1f5;
+  color: #e0f7ff;
   text-align: center;
+  transition: all 0.4s ease;
 
   h2 {
+    font-size: 2.2rem;
     color: #00e6ff;
-    margin-bottom: 2rem;
-    text-shadow: 0 0 10px #00e6ff;
+    margin-bottom: 3rem;
+    text-shadow: 0 0 15px rgba(0, 230, 255, 0.6);
+    letter-spacing: 1px;
   }
 
   .grid {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 2rem;
-    justify-content: center;
+  }
 
-    ::ng-deep .p-card {
-      background: rgba(0, 20, 40, 0.85);
-      border-radius: 12px;
-      border: 1px solid rgba(0, 255, 255, 0.15);
-      color: #d9f7ff;
-      transition: 0.3s;
-      width: 280px;
+  ::ng-deep .p-card {
+    background: linear-gradient(145deg, rgba(0, 15, 30, 0.85), rgba(0, 40, 60, 0.65));
+    color: #e0f7ff;
+    border: 1px solid rgba(0, 230, 255, 0.15);
+    box-shadow: 0 0 25px rgba(0, 230, 255, 0.08);
+    border-radius: 16px;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    max-width: 420px;
 
-      &:hover {
-        box-shadow: 0 0 15px #00e6ff77;
-        transform: scale(1.05);
+    &:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 0 40px rgba(0, 230, 255, 0.3);
+    }
+
+    .p-card-header {
+      font-size: 1.5rem;
+      color: #00e6ff;
+      text-shadow: 0 0 10px rgba(0, 230, 255, 0.6);
+      margin-bottom: 0.5rem;
+    }
+
+    .p-card-subtitle {
+      color: #8ecae6;
+      margin-bottom: 1rem;
+    }
+
+    .p-card-content {
+      padding: 1rem 1.5rem;
+      color: #bde0fe;
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+
+    .botoes {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+
+      button {
+        background: linear-gradient(90deg, #00e6ff, #00ffcc);
+        color: #00111f !important;
+        border: none;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        box-shadow: 0 0 10px rgba(0, 230, 255, 0.3);
+
+        &:hover {
+          background: linear-gradient(90deg, #00bfff, #00ffcc);
+          transform: translateY(-2px);
+          box-shadow: 0 0 20px rgba(0, 230, 255, 0.5);
+        }
       }
     }
+  }
+
+  ::ng-deep .carousel-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 230, 255, 0.3);
+    box-shadow: 0 0 15px rgba(0, 230, 255, 0.2);
+    transition: all 0.4s ease;
+
+    &:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 30px rgba(0, 230, 255, 0.4);
+    }
+  }
+}
+.projeto-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+
+  a {
+    text-decoration: none;
+  }
+
+  .botao-projeto {
+    background: transparent;
+    border: 1px solid rgba(0, 230, 255, 0.4);
+    color: #00e6ff;
+    font-weight: 600;
+    padding: 0.8rem 1.5rem;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 230, 255, 0.15);
+    backdrop-filter: blur(4px);
+
+    &:hover {
+      background: linear-gradient(90deg, #00e6ff, #00ffcc);
+      color: #00111f;
+      transform: translateY(-3px) scale(1.05);
+      box-shadow: 0 0 25px rgba(0, 230, 255, 0.5);
+    }
+
+    &.github {
+      border-color: rgba(255, 255, 255, 0.25);
+
+      &:hover {
+        background: linear-gradient(90deg, #333, #00e6ff);
+        color: #fff;
+      }
+    }
+
+    &.site {
+      border-color: rgba(0, 255, 200, 0.4);
+
+      &:hover {
+        background: linear-gradient(90deg, #00ffcc, #00bfff);
+        color: #00111f;
+      }
+    }
+  }
+}
+
+
+/* 🌐 RESPONSIVIDADE */
+@media (max-width: 1024px) {
+  .projetos {
+    padding: 4rem 1.5rem;
+  }
+  .projetos h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .projetos .grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  .projetos ::ng-deep .p-card {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .projetos {
+    padding: 3rem 1rem;
+  }
+
+  .projetos h2 {
+    font-size: 1.8rem;
+  }
+
+  .projetos ::ng-deep .p-card-header {
+    font-size: 1.3rem;
+  }
+
+  .projetos .botoes button {
+    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
   }
 }

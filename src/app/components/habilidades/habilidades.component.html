@@ -1,28 +1,52 @@
 <section class="habilidades">
   <h2>Habilidades</h2>
+
   <div class="skills">
-    <div>
+    <div class="card">
+      <div class="icon">
+        <i class="pi pi-desktop"></i>
+      </div>
       <h3>Frontend</h3>
       <p>Angular</p>
-      <p-progressBar value="90"></p-progressBar>
+      <p-progressBar [value]="90"></p-progressBar>
       <p>PrimeNG</p>
-      <p-progressBar value="85"></p-progressBar>
+      <p-progressBar [value]="85"></p-progressBar>
+      <p>TypeScript</p>
+      <p-progressBar [value]="80"></p-progressBar>
+      <p>JavaScript</p>
+      <p-progressBar [value]="85"></p-progressBar>
     </div>
 
-    <div>
+    <div class="card">
+      <div class="icon">
+        <i class="pi pi-server"></i>
+      </div>
       <h3>Backend</h3>
       <p>FastAPI</p>
-      <p-progressBar value="88"></p-progressBar>
+      <p-progressBar [value]="88"></p-progressBar>
       <p>SQLAlchemy</p>
-      <p-progressBar value="80"></p-progressBar>
+      <p-progressBar [value]="80"></p-progressBar>
+      <p>Python</p>
+      <p-progressBar [value]="85"></p-progressBar>
+
+      <h4>Bancos de Dados</h4>
+      <p>PostgreSQL</p>
+      <p-progressBar [value]="85"></p-progressBar>
+      <p>MySQL</p>
+      <p-progressBar [value]="80"></p-progressBar>
     </div>
 
-    <div>
+    <div class="card">
+      <div class="icon">
+        <i class="pi pi-cog"></i>
+      </div>
       <h3>Outros</h3>
       <p>Git</p>
-      <p-progressBar value="90"></p-progressBar>
+      <p-progressBar [value]="90"></p-progressBar>
       <p>Docker</p>
-      <p-progressBar value="70"></p-progressBar>
+      <p-progressBar [value]="70"></p-progressBar>
+      <p>UX/UI Design</p>
+      <p-progressBar [value]="75"></p-progressBar>
     </div>
   </div>
 </section>

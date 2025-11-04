@@ -4,6 +4,7 @@ import { SobreComponent } from '../../components/sobre/sobre.component';
 import { HabilidadesComponent } from '../../components/habilidades/habilidades.component';
 import { ProjetosComponent } from '../../components/projetos/projetos.component';
 import { ContatoComponent } from '../../components/contato/contato.component';
+import { MessageService } from 'primeng/api';
 
 @Component({
   selector: 'app-home',
@@ -15,6 +16,7 @@ import { ContatoComponent } from '../../components/contato/contato.component';
     ProjetosComponent,
     ContatoComponent,
   ],
+  providers: [MessageService],
   template: `
     <app-hero></app-hero>
     <app-projetos></app-projetos>

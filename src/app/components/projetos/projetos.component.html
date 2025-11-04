@@ -1,8 +1,58 @@
 <section class="projetos">
-  <h2>Projetos</h2>
+  <h2>Projeto</h2>
   <div class="grid">
-    <p-card header="Dashboard" subheader="Angular | PrimeNG"></p-card>
-    <p-card header="ChatApp" subheader="Python | FastAPI"></p-card>
-    <p-card header="UI Design" subheader="UX | Figma"></p-card>
-  </div>
+  <p-card>
+  <ng-template pTemplate="header">
+    <div class="projeto-header">
+      <h3>RmtPark</h3>
+      <span>Angular | FastAPI | PostgreSQL | Python</span>
+    </div>
+  </ng-template>
+
+  <ng-template pTemplate="content">
+
+        <p-carousel [value]="rmtparkImgs" [numVisible]="1" [numScroll]="1" [circular]="true" [autoplayInterval]="3500">
+          <ng-template pTemplate="item" let-img>
+            <img [src]="img" alt="RmtPark Screenshot" class="carousel-img" />
+          </ng-template>
+        </p-carousel>
+
+        <p>
+          Sistema completo de gestão de estacionamento com controle de entrada, saída e pagamentos, 
+          desenvolvido com Angular e FastAPI.
+        </p>
+      <div class="projeto-links">
+        <a href="https://github.com/RhamonAlmeiida/rmtpark-tcc" target="_blank">
+          <button pButton label="Ver no GitHub" icon="pi pi-github" class="botao-projeto github"></button>
+        </a>
+        <a href="https://rmtpark.com" target="_blank">
+          <button pButton label="Ver Site" icon="pi pi-globe" class="botao-projeto site"></button>
+        </a>
+      </div>
+
+      </ng-template>
+    </p-card>
+
+  <!--  <p-card header="ChatApp" subheader="Python | FastAPI">
+      <ng-template pTemplate="header">
+        <img src="assets/projetos/chatapp.jpg" alt="ChatApp FastAPI">
+      </ng-template>
+      <ng-template pTemplate="content">
+        <p>
+          Aplicativo de chat em tempo real com WebSockets e autenticação JWT.
+        </p>
+      </ng-template>
+    </p-card>
+
+    <p-card header="UI Design" subheader="UX | Figma">
+      <ng-template pTemplate="header">
+        <img src="assets/projetos/ui-design.jpg" alt="UI Design Figma">
+      </ng-template>
+      <ng-template pTemplate="content">
+        <p>
+          Prototipagem e design de interfaces responsivas no Figma com foco em usabilidade.
+        </p>
+      </ng-template>
+    </p-card>
+ --> </div>
 </section>
