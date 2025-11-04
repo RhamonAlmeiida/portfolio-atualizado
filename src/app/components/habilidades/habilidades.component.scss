@@ -1,0 +1,38 @@
+.habilidades {
+  margin: 3rem auto;
+  max-width: 900px;
+  padding: 2rem;
+  color: #e0f7ff;
+
+  h2 {
+    text-align: center;
+    color: #00e6ff;
+    margin-bottom: 2rem;
+    text-shadow: 0 0 8px #00e6ff;
+  }
+
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+
+    .card {
+      flex: 1 1 250px;
+      background: rgba(0, 25, 50, 0.7);
+      padding: 1.5rem;
+      border-radius: 10px;
+      border: 1px solid rgba(0, 255, 255, 0.15);
+      box-shadow: 0 0 10px rgba(0, 255, 255, 0.1);
+
+      h3 {
+        color: #8ecae6;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+}

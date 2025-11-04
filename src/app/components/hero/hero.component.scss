@@ -1,0 +1,68 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  min-height: 80vh;
+  background: radial-gradient(circle at top, #021a3b, #000);
+  color: #e6f1f5;
+  padding: 2rem;
+
+  .perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      border: 3px solid #00e6ff;
+      box-shadow: 0 0 25px rgba(11, 218, 218, 0.959);
+      object-fit: cover;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 40px rgba(0, 255, 255, 0.5);
+      }
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin-top: 1rem;
+
+      span {
+        color: #00e6ff;
+        text-shadow: 0 0 12px #00e6ff;
+      }
+    }
+
+    h2 {
+      font-weight: 400;
+      color: #8ecae6;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #bde0fe;
+    }
+
+    .botoes {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1.5rem;
+
+      ::ng-deep .p-button {
+        font-weight: 500;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(13, 224, 224, 0.493);
+      }
+    }
+  }
+}

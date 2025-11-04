@@ -1,0 +1,23 @@
+.sobre {
+  background: rgba(0, 15, 30, 0.8);
+  border: 1px solid rgba(0, 255, 255, 0.2);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 3rem;
+  margin: 2rem auto;
+  max-width: 800px;
+  line-height: 1.8;
+  color: #c9f2ff;
+
+  h2 {
+    text-align: center;
+    color: #00e6ff;
+    text-shadow: 0 0 10px #00e6ff;
+    margin-bottom: 1.5rem;
+  }
+
+  p {
+    text-align: justify;
+    margin-bottom: 1rem;
+  }
+}

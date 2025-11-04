@@ -1,0 +1,31 @@
+.projetos {
+  padding: 3rem 1rem;
+  text-align: center;
+
+  h2 {
+    color: #00e6ff;
+    margin-bottom: 2rem;
+    text-shadow: 0 0 10px #00e6ff;
+  }
+
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+
+    ::ng-deep .p-card {
+      background: rgba(0, 20, 40, 0.85);
+      border-radius: 12px;
+      border: 1px solid rgba(0, 255, 255, 0.15);
+      color: #d9f7ff;
+      transition: 0.3s;
+      width: 280px;
+
+      &:hover {
+        box-shadow: 0 0 15px #00e6ff77;
+        transform: scale(1.05);
+      }
+    }
+  }
+}
