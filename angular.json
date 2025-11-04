@@ -85,6 +85,10 @@
             "tsConfig": "tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
             "assets": [
+              "src/assets",
+              "/favicon.ico",
+              "src/_redirects",
+
               {
                 "glob": "**/*",
                 "input": "public"
